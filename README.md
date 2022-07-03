@@ -1,5 +1,6 @@
-# wnm608_files
+# Anna Duvall
  
-Hello. This is Anna. I am setting up my first project.
 
-Thank you.
+## Relevant Links 
+- http://portfolio.annaduvall.com/aau_aduvall/wnm608_files/index.html
+- http://portfolio.annaduvall.com/aau_aduvall/wnm608_files/styleguide

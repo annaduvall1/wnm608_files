@@ -1,8 +1,13 @@
 :root {
 	--color-offwhite:  #f4f4f4;
+
+    --color-main-light: #99ccff;
+    --color-main-medium:  #6699cc;
+    --color-main-dark:  #336699;
 }
 
 
+
 body {
-	background-color: var(--color-offwhite);
+ background-color: var(--color-offwhite);
 }

@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>CSS Styleguide</title>
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="https://use.typekit.net/cbw3gfx.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" type="text/css" href="../css/storetheme.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body>
+
+	<header class="navbar">
+		<div class= "container display-flex">
+			<div class= "flex-none">		
+				<h1>Styleguide</h1>
+			</div>
+
+
+			<div class= "flex-stretch"></div>	
+			<nav class= "flex-none nav">
+
+			
+				<ul class="container display-flex">
+					<li> <a href="#TableofContents">Table of Contents</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+
+	<div class="container" id="TableofContents">
+			<h2>Table of Contents</h2>
+			<div class="card">
+				<nav class="nav">
+					<ul>
+						<li><a href="#typography">Typography</a></li>
+					<ul>
+
+						<li><a href="#headings">Headings</a></li>
+						<li><a href="#paragraphs">Paragraphs</a></li>
+					</ul>
+
+						<li><a href="#card">Cards</a></li>
+						<li><a href="#viewwindow">View Window</a></li>
+						<li><a href="#navigation">Navigations</a></li>
+						<li><a href="#gridsystem">Grid System</a></li>
+						<li><a href="#flexsystem">Flex System</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+
+	<div class="container" id="typography">
+		<h2>Typography</h2>
+		<div class="card soft" id="headings">
+			
+			
+			<h3>Headings</h3>
+
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</div>
+
+		<div class="card soft" id="paragraphs">
+			<h3>Paragraphs</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam incidunt cumque, tenetur nemo, repellat ea ex perspiciatis minima quasi ut vitae. Saepe maiores alias iure facere voluptate non porro veritatis.</p>
+			<p>Quibusdam nam minus voluptatum amet molestiae reprehenderit expedita accusamus corrupti, aspernatur ipsum. Nostrum cupiditate tenetur distinctio quaerat repellendus dolorem amet fugiat quidem. Voluptatibus, sunt in ex cupiditate doloribus maiores dolore.</p>
+			<p>Quo voluptates adipisci, aliquid molestiae facere, at ipsum iusto accusantium vero earum laborum, quidem distinctio mollitia nostrum corrupti repellendus reprehenderit? Adipisci culpa corrupti dolores incidunt porro aut consequatur autem voluptatibus.</p>
+		</div>
+	</div>
+
+		<div class="container">
+		<h2>Cards</h2>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<div class="card">Card</div>
+		</div>
+		
+		<div class="col-xs-12 col-md-4">
+					<div class="card soft">Card Soft</div>
+		</div>
+
+		<div class="col-xs-12 col-md-4">
+					<div class="card hard">Card Hard</div>
+		</div>
+
+		<div class="col-xs-12 col-md-4">
+					<div class="card flat">Card Flat</div>
+		</div>
+
+		<div class="col-xs-12 col-md-4">
+					<div class="card dark">Card Dark</div>
+		</div>
+
+		<div class="col-xs-12 col-md-4">
+					<div class="card medium">Card Medium</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<div class="container">
+		<h2>View Window</h2>
+	</div>
+
+
+	<div class="container" id="navigations">
+		<h2>Navigations</h2>
+		
+		<script>
+			const makeNav = (classes='') => {
+				const links = ['home', 'store', 'about'];
+				let ran = Math.floor(Math.random()*links.length);
+				document.write(`
+				<div>
+					<nav class= "${classes}">
+					<ul>
+					${links.reduce((r,o,i)=>{
+						return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a> </li>`;
+					},'')}
+				</ul>
+			</nav>
+		</div>
+		`);
+		}
+		</script>
+
+
+		<div class="card soft">
+			<h3>Basic Nav</h3>
+			<script>makeNav('nav')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Flex Nav</h3>
+			<script>makeNav('nav nav-flex')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Stretch Nav</h3>
+			<script>makeNav('nav nav-stretch')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Stretch Pills</h3>
+			<script>makeNav('nav nav-pills')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Crumbs Nav</h3>
+			<script>makeNav('nav nav-crumbs')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Material Nav</h3>
+			<script>makeNav('nav nav-material')</script>
+		</div>
+
+		<script>
+			$("#navigations a").on ("click",function(e){
+				e.preventDefault();
+				$(this).closest("li").addClass("active")
+					.siblings().removeClass("active")
+			})
+		</script>
+	</div>
+
+
+	<div class="container">
+		<h2>Grid System</h2>
+	</div>
+
+
+
+	<div class="container">
+		<h2>Flex System</h2>
+	</div>
+
+
+		<script>
+			const makeNav = (classes='') => {
+				const head = ['ID', 'Office', 'Name', 'Email', 'Phone'];
+				const body = [
+					['232', "Smith Fred", 'fsmith@gmail.com', '232-2323'],
+					['232', "Smith Fred", 'fsmith@gmail.com', '232-2323'],
+					['232', "Smith Fred", 'fsmith@gmail.com', '232-2323'],
+					['232', "Smith Fred", 'fsmith@gmail.com', '232-2323'],
+					['232', "Smith Fred", 'fsmith@gmail.com', '232-2323'],
+				];
+
+				document.write(`
+					<table class= "${classes}">
+					<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+					<tbody>${body.reduce((r,o,i)=>r+
+						`<tr>${
+							[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+						}</tr>`,'')
+					}</tbody>
+				</table>
+				`);
+				}				
+		</script>
+
+	<div class="container">
+		<h2>Tables</h2>
+
+			<script>makeTable("table")</script>
+		</div>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
