@@ -11,10 +11,10 @@
 
 			
 				<ul class="container display-flex">
-					<li> <a href="#index.php">Home</a> </li>
+					<li> <a href="index.html">Home</a> </li>
 					<li> <a href="#about">About</a> </li>
 					<li> <a href="product_list.php">Store</a> </li>
-					<li> <a href="#more">More</a> </li>
+					<li> <a href="product_item.php">More</a> </li>
 					<li> <a href="#gallery">Gallery</a> </li>
 				</ul>
 			</nav>
