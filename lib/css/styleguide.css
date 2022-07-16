@@ -55,36 +55,63 @@ a:hover {
 
 
 /* LAYOUT CLASSES */
-
 .container {
-	max-width: 800px;
+	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.display-flex { display:flex; }
-.display-inline-flex { display:inline-flex; }
-.display-block { display:block; }
-.display-inline-block { display:inline-block; }
+.container2 {
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
 
+.display-flex {
+	display: flex;
+}
 
-.flex-stretch { flex: 1 1 auto; }
-.flex-none { flex: none; }
+.display-inline-flex {
+	display: inline-flex;
+}
 
-.flex-align-center { align-items: center; }
-.flex-justify-center { justify-content: center; }
+.display-blcok {
+	display: block;
+}
 
+.display-inline-block {
+	display: inline-block;
+}
+
+.flex-stretch {
+	flex: 1 1 auto;
+}
+
+.flex-none {
+	flex: none;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.flex-justify-center {
+	justify-content: center;
+}
 
 
 
 /* SMALL CLASSES */
-
 .media-image {
 	max-width: 100%;
 	vertical-align: text-bottom;
 }
 
-.hidden {display: none;}
+
+
+
+/* CHECKBOX */
+.hidden{display: none}
 
 
 
@@ -181,7 +208,7 @@ a:hover {
 
 
  .navbar {
- 	background-color:  var(--color-neutral-medium);
+ 	background-color:  var(--color-main-light);
  	color: var(--color-white);
  	line-height: var(--header-height);
  }
@@ -254,32 +281,66 @@ a:hover {
  	}
 
 
+
+/* VIEW WINDOW */
 .view-window {
 	height: 50vh;
 	position: relative;
 	overflow: hidden;
 	background-size: cover;
-	background-position: center;
+	background-position: cneter;
 	background-attachment: fixed;
 }
 
 
-/* TABLES */
+
+/*  TABLES */
 .table {
-	width: 100%;
-	border-collapse: collapse;
-
+	width:100%;
+	border-collapse:collapse;
 }
-
 .table th,
 .table td {
-	text-align: left;
-	padding: 0.2em 0.5em;
+	text-align:left;
+	padding:0.2em 0.5em;
 }
 
 .table.striped tbody tr:nth-child(odd) {
-	background-color: var(--color-neutral-light);
-	}
+	background-color:var(--color-neutral-light);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+	border-left: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all tbody tr,
+.table.lined.all tbody tr {
+	border-top: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all,
+.table.lined.border {
+	border: 1px solid var(--color-neutral-medium);
+}
+
+
+/* FIGURE */
+.figure {
+	margin: 0;
+	background-color: var(--color-white);
+}
+
+.figure img {
+	width: 100%;
+}
+
+.figure figcaption {
+	padding: 1em;
+}
+
 
 
 /* FORMS */
@@ -365,48 +426,62 @@ a:hover {
 	position: relative;
 }
 
-.form-select::after {
-	content: '▾';
-	font-family: arial, sans-serif;
+
+
+.form-select:after{
+	content: "▾";
+	font-family: arial，sans-serif;
 	font-size: 1.2em;
 	position: absolute;
 	top: 50%;
 	right: 0.2em;
 	transform: translateY(-50%);
 	pointer-events: none;
-	color: var(--color-neutral-medium);
+	color: var(color-neutral-medium);
 }
 
 
 
 /* TOGGLE */
-
-.toggle label {
-    font-size: 1.3em;
-    display: inline-block;
-    width: 2em;
-    height: 1em;
-    border: 0.1em solid var(--color-neutral-medium);
-    background-color: var(--color-neutral-light);
-    border-radius: 1em;
-    position: relative;
-}
-
-.toggle label::after {
-	content: '';
-    display: inline-block;
-    width: 0.8em;
-    height: 0.8em;
-    border-radius: 1em;
+.toggle-box input[type="checkbox"] {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+  }
+  
+  .toggle-box label {
+	display: block;
+	width: 80px;
+	height: 30px;
+	background-color: #f0f0f0;
+	border-radius: 100px;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	border: 2px solid #A1A1A1;
+	/* -webkit-box-shadow: 0 0 50px #477a85; */
+			/* box-shadow: 0 0 50px #477a85; */
+  }
+  
+  .toggle-box label::after {
+	content: "";
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
     position: absolute;
-    background-color: var(--color-neutral-medium);
-    transition: all 0.3s;
+    border-radius: 70px;
+    top: 2px;
+    left: 3px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
-
-toggle input:checked + label::after {
-	transform: translateX(1em);
-}
-
+  
+  .toggle-box :checked + label:after {
+	left: calc(100% - 3px);
+	-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+  }
 
 
 

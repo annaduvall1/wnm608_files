@@ -1,0 +1,40 @@
+[
+	{
+		"name": "Anna Duvall",
+		"type": "Student",
+		"email": "elinannaduvall@gmail.com",
+		"classes": [608, 617]
+	}
+
+
+	{
+		"name": "Layla",
+		"type": "Student",
+		"email": "elinannaduvall@gmail.com",
+		"classes": [608, 617]
+	}
+
+
+	{
+		"name": "Audrey",
+		"type": "Student",
+		"email": "elinannaduvall@gmail.com",
+		"classes": [608, 617]
+	}
+
+
+	{
+		"name": "Sarah",
+		"type": "Student",
+		"email": "elinannaduvall@gmail.com",
+		"classes": [608, 617]
+	}
+
+
+	{
+		"name": "Michael",
+		"type": "Student",
+		"email": "elinannaduvall@gmail.com",
+		"classes": [608, 617]
+	}
+]
