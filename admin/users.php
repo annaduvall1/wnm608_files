@@ -1,51 +1,48 @@
-<?php 
+<?php
 
-include"../lib/php/functions.php";
+include "../lib/php/functions.php";
 
+$users = file_get_json("../data/users.json");
 
-
-
-$users = file_get_json ("../data/users.json");
-
-
-
-
-
-
-function showUserPage($user){
-	
+function showUserPage($user) {
 $classes = implode(",", $user->classes);
 
-
-	//heredoc
-	echo <<<HTML
-	<nav class = "nav nav-crumbs">
-		<ul>
-			<li><a href="admin/users.php">Back</a></li>
-		</ul>
-	</nav>
-	
-	<div>
-		<h2>$user->name</h2>
-	<form>
-		<label for = "type">Type:</label><br>
-		<input type="text" id="type" name="type"><br>
-		<label for = "email">Email:</label><br>
-		<input type="text" id="email" name="email"><br><br>
-		<input type = "submit">
-	<form>
-	</div>	
-	HTML;
-	}
-
-
-
-
-
+// heredoc
+echo <<<HTML
+<nav class ="nav nav-crumbs">
+    <ul>
+	  <li><a href="admin/users.php">Back</a></li>
+    </ul>
+</nav>
+<div>
+   <form>
+   		<div class="form-control">
+		   <label class="form-label">Name</label>
+		   <input type="text" value=$user->name class="form-input">
+	    </div>
+		<div class="form-control">
+		   <label class="form-label">Type</label>
+		   <input type="text" value=$user->type class="form-input">
+	    </div>
+	    <div class="form-control">
+		   <label class="form-label">Email</label>
+		   <input type="text" value=$user->email class="form-input">
+	    </div>
+	    <div class="form-control">
+		   <label class="form-label">Classes</label>
+		   <input type="text" value=$classes class="form-input">
+		</div>
+	</form>
+	 <div class="form-control">
+		<input type="button" class="form-button" value="Submit">
+	</div>
+</div>
+HTML;
+}
 
 ?>
 
- <!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -54,8 +51,6 @@ $classes = implode(",", $user->classes);
 	<?php include "../parts/meta.php"; ?>
 </head>
 <body>
-
-
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
@@ -66,64 +61,37 @@ $classes = implode(",", $user->classes);
 				<ul>
 					<li><a href="admin/users.php">User List</a></li>
 				</ul>
-			</nav>
+			</nav>	
 		</div>
 	</header>
 
 	<div class="container">
-
 		<div class="card soft">
-
-
-			<?php 
-
-			if(isset($_GET['id'])) {
+			<?php
+			if(isset($_GET['id'])){
 				showUserPage($users[$_GET['id']]);
 			} else {
-
-			
 			?>
-	
-		<h2>Users List</h2>
 
+			<nav class="nav">
+				<h2>User List</h2>
 
-		<nav class="nav">
-			<ul>
-	
-	<?php 
+				<ul>
 
-	 	for($i=0;$i<count($users);$i++){
-	 		echo "<li>
-	 			<a href='admin/users.php?id=$i'>{$users[$i]->name}</a>	
-	 		</li>";
-	 	}
+				<?php
+				for($i=0;$i<count($users);$i++){
+					echo "<li>
+					   <a href='admin/users.php?id=$i'>{$users[$i]->name}</a>
+					</li>";
+				}
+				?>
+				
+				</ul>
+			</nav>
 
-	 	 ?>
-
-			</ul>
-		</nav>
-
-	<?php } ?>
-
-	<nav class="nav">
-			<ul>
-	 	<li>
-	 			<a href='admin/users.php?id=0'>Anna</a>	
-	 		</li><li>
-	 			<a href='admin/users.php?id=1'>Layla</a>	
-	 		</li><li>
-	 			<a href='admin/users.php?id=2'>Audrey</a>	
-	 		</li><li>
-	 			<a href='admin/users.php?id=3'>Sarah</a>	
-	 		</li><li>
-	 			<a href='admin/users.php?id=4'>Michael</a>	
-	 		</li>
-			</ul>
-		</nav>
-
-
+			<?php  }
+			?>
+		</div>
 	</div>
-	</div>
-
 </body>
 </html>

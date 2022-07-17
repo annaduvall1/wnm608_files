@@ -1,40 +1,38 @@
 [
 	{
-		"name": "Anna Duvall",
-		"type": "Student",
-		"email": "elinannaduvall@gmail.com",
-		"classes": [608, 617]
-	}
-
-
+		"name":"Anna",
+		"type":"Student",
+		"email":"anna@earthlink.com",
+		"classes": [608,111]
+	},
 	{
-		"name": "Layla",
-		"type": "Student",
-		"email": "elinannaduvall@gmail.com",
-		"classes": [608, 617]
-	}
-
-
+		"name":"Audrey",
+		"type":"Student",
+		"email":"anna@earthlink.com",
+		"classes": [608,617,111]
+	},
 	{
-		"name": "Audrey",
-		"type": "Student",
-		"email": "elinannaduvall@gmail.com",
-		"classes": [608, 617]
-	}
-
-
+		"name":"Layla",
+		"type":"Student",
+		"email":"anna@earthlink.com",
+		"classes": [608,111]
+	},
 	{
-		"name": "Sarah",
-		"type": "Student",
-		"email": "elinannaduvall@gmail.com",
-		"classes": [608, 617]
-	}
-
-
+		"name":"Elin",
+		"type":"Student",
+		"email":"anna@earthlink.com",
+		"classes": [608,617,111]
+	},
 	{
-		"name": "Michael",
-		"type": "Student",
-		"email": "elinannaduvall@gmail.com",
-		"classes": [608, 617]
+		"name":"Sarah",
+		"type":"Student",
+		"email":"anna@earthlink.com",
+		"classes": [608,111]
+	},
+	{
+		"name":"Michael",
+		"type":"Student",
+		"email":"anna@earthlink.com",
+		"classes": [608,617,111]
 	}
 ]
