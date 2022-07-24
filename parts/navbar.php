@@ -14,8 +14,8 @@
 					<li> <a href="index.php">Home</a> </li>
 					<li> <a href="about.php">About</a> </li>
 					<li> <a href="product_list.php">Store</a> </li>
-					<li> <a href="product_item.php">More</a> </li>
 					<li> <a href="gallery.php">Gallery</a> </li>
+					<li> <a href="cart.php">Cart</a> </li>
 				</ul>
 			</nav>
 		</div>
