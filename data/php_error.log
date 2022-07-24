@@ -1,4 +1,4 @@
 
 
 
-error_log = /home/[your FTP username]/public_html/php_error.log
+error_log = /aau_duvall/wnm608_files/data/php_error.log

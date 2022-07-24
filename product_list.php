@@ -1,22 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Product List</title>
 
-
 	<?php include "parts/meta.php"; ?>
-
 </head>
 <body>
-
-	<?php include "parts/navbar.php"; ?>
+    <?php include "parts/navbar.php"; ?>
 
 	<div class="container">
-		<h2>Product List</h2>
-
-			<?php 
+		
+			<h2>Product List</h2>
+			
+			<?php
 
 			include_once "lib/php/functions.php";
 			include_once "parts/templates.php";
@@ -26,15 +23,14 @@
 				"
 				SELECT *
 				FROM `products`
-				ORDER BY `date_create` DESC
+				ORDER BY `name` DESC
 				LIMIT 12
 				"
 			);
 
 			echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
-
-			 ?>
-	</div>
-	
-</body>
+			?>
+		</div>
+	</div>	
+</body>t
 </html>

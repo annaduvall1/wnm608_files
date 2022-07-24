@@ -7,7 +7,7 @@ $images = explode(",", $product->images);
 
 
 $image_elements = array_reduce($images,function($r,$o){
-	return $r."<img src='img/$o'>";
+	return $r."<img src='/wnm608_files/img/$o'>";
 });
 
 // print_p($product);
@@ -32,7 +32,7 @@ $image_elements = array_reduce($images,function($r,$o){
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="images-main">
-						<img src="img/<?= $product->thumbnail ?>" alt="">
+						<img src="/wnm608_files/img/<?= $product->thumbnail ?>" alt="">
 					</div>
 					<div class="images-thumbs">
 						<?= $image_elements ?>
