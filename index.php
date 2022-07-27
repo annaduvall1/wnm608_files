@@ -1,3 +1,8 @@
+<?php
+
+include_once "lib/php/functions.php";
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +30,7 @@
 				<div class= "flex-stretch">
 					<article id="article 2" class="article card header">
 					<h3>Welcome to Anna's Store Front</h3>
-					<h4>Hello!</h4>
-					<h6>Where your creativity begins</h6>
+					<h5>Where your creativity begins</h5>
 				</div>
 			</div>
 		</article>
@@ -53,65 +57,6 @@
 		</article>
  	</div>
  		</div>
-
-
- 		<div class="container">
-	<div class="card soft">
-		<h2>Grid</h2>
-		<div class="grid">
-			<div class="col-xs-6">column 6</div>
-			<div class="col-xs-6">column 6</div>
-		</div>
-
-
-		<div class="grid gap xs-small md-medium">
-			<div class="col-xs-4">column 4</div>
-			<div class="col-xs-4">column 4</div>
-			<div class="col-xs-4">column 4</div>
-		
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-6">column 6</div>
-			<div class="col-xs-3">column 3</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="container">
-	<div class="card soft">
-		<h2>Responsive Grid</h2>
-		<div class="grid">
-			<div class="col-xs-12 col-md-6">column 6</div>
-			<div class="col-xs-12 col-md-6">column 6</div>
-		</div>
-
-
-		<div class="grid">
-			<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
-			<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
-			<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
-		
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-		</div>
-
-		<div class="grid ten gap">
-
-			<div class="col-xs-2">column 2</div>
-			<div class="col-xs-2">column 2</div>
-			<div class="col-xs-2">column 2</div>
-			<div class="col-xs-2">column 2</div>
-			<div class="col-xs-2">column 2</div>
-		</div>
-	</div>
-</div>
 
 
 

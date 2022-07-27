@@ -26,7 +26,7 @@
 					<article id="article 2" class="article card header">
 					<h3>About Anna's Store</h3>
 					
-					<h6>Where your creativity begins</h6>
+					<h5>Where your creativity begins</h5>
 				</div>
 			</div>
 		</article>
@@ -46,72 +46,22 @@
 		
 		<article id="article 2" class="article card soft">
 			<h3>About Anna</h3>
+			
 			<div class="article-body">
-		        <p>I wanted to find a way to pull all the best memories of my youth (combined with my professional design and dance background) together into one uplifting and inspiring offering - and that's how Elin Anna Love came to life. It is a way for me to share the best parts of life in the design of your special day, occasion, home, lifestyle and future.
-		        </p>		
+		     				<div>I wanted to find a way to pull all the best memories of my youth (combined with my professional design and dance background) together into one uplifting and inspiring offering - and that's how Elin Anna Love came to life. It is a way for me to share the best parts of life in the design of your special day, occasion, home, lifestyle and future.
+		        </div>
+		    </div>
+		</article>
+		
+		
+		<article id="article 2" class="article card soft">
+			<div class="article-body">
+			<img src="img/AnnaDuvall_HeadShot.jpeg" align = left padding = 50>
+			</div>
 		    </div>
 		</article>
  	</div>
- 		</div>
-
-
- 		<div class="container">
-	<div class="card soft">
-		<h2>Grid</h2>
-		<div class="grid">
-			<div class="col-xs-6">column 6</div>
-			<div class="col-xs-6">column 6</div>
-		</div>
-
-
-		<div class="grid gap xs-small md-medium">
-			<div class="col-xs-4">column 4</div>
-			<div class="col-xs-4">column 4</div>
-			<div class="col-xs-4">column 4</div>
-		
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-6">column 6</div>
-			<div class="col-xs-3">column 3</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="container">
-	<div class="card soft">
-		<h2>Responsive Grid</h2>
-		<div class="grid">
-			<div class="col-xs-12 col-md-6">column 6</div>
-			<div class="col-xs-12 col-md-6">column 6</div>
-		</div>
-
-
-		<div class="grid">
-			<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
-			<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
-			<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
-		
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-			<div class="col-xs-3">column 3</div>
-		</div>
-
-		<div class="grid ten gap">
-
-			<div class="col-xs-2">column 2</div>
-			<div class="col-xs-2">column 2</div>
-			<div class="col-xs-2">column 2</div>
-			<div class="col-xs-2">column 2</div>
-			<div class="col-xs-2">column 2</div>
-		</div>
-	</div>
-</div>
+ </div>
 
 
 
