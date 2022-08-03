@@ -38,10 +38,10 @@ include_once "parts/templates.php";
 						    <button data-filter="category" data-value="" type="button" class="form-button button-stretch">All</button>
 					    </div>
 					    <div class="flex-none">
-						    <button data-filter="category" data-value="vases" type="button" class="form-button button-stretch">Flowers</button>
+						    <button data-filter="category" data-value="vase" type="button" class="form-button button-stretch">Vases</button>
 					    </div>
 					    <div class="flex-none">
-						    <button data-filter="category" data-value="frames" type="button" class="form-button button-stretch">Bouquet</button>
+						    <button data-filter="category" data-value="frame" type="button" class="form-button button-stretch">Frames</button>
 					    </div>
 					</div>
 	            	<div class="flex-none">

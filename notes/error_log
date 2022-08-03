@@ -1,0 +1,22 @@
+[16-Jul-2022 16:34:46 UTC] PHP Notice:  Undefined index: id in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 35
+[16-Jul-2022 16:37:26 UTC] PHP Notice:  Undefined index: id in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 35
+[16-Jul-2022 16:37:27 UTC] PHP Notice:  Undefined index: id in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 35
+[16-Jul-2022 16:37:35 UTC] PHP Notice:  Undefined index: id in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 35
+[16-Jul-2022 16:38:34 UTC] PHP Notice:  Undefined index: id in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 35
+[16-Jul-2022 16:52:03 UTC] PHP Notice:  Undefined index: id in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 41
+[16-Jul-2022 17:03:52 UTC] PHP Parse error:  syntax error, unexpected '=', expecting variable (T_VARIABLE) or '{' or '$' in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 42
+[16-Jul-2022 17:03:54 UTC] PHP Parse error:  syntax error, unexpected '=', expecting variable (T_VARIABLE) or '{' or '$' in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 42
+[16-Jul-2022 17:08:28 UTC] PHP Parse error:  syntax error, unexpected '=', expecting variable (T_VARIABLE) or '{' or '$' in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 42
+[16-Jul-2022 17:08:44 UTC] PHP Parse error:  syntax error, unexpected '=', expecting variable (T_VARIABLE) or '{' or '$' in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 42
+[16-Jul-2022 17:21:21 UTC] PHP Parse error:  syntax error, unexpected '=', expecting variable (T_VARIABLE) or '{' or '$' in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 49
+[16-Jul-2022 17:21:25 UTC] PHP Parse error:  syntax error, unexpected '=', expecting variable (T_VARIABLE) or '{' or '$' in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 49
+[16-Jul-2022 17:21:47 UTC] PHP Parse error:  syntax error, unexpected '=', expecting variable (T_VARIABLE) or '{' or '$' in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 49
+[16-Jul-2022 17:22:02 UTC] PHP Parse error:  syntax error, unexpected '=', expecting variable (T_VARIABLE) or '{' or '$' in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 49
+[16-Jul-2022 17:22:09 UTC] PHP Parse error:  syntax error, unexpected '=', expecting variable (T_VARIABLE) or '{' or '$' in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 49
+[16-Jul-2022 17:27:02 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 52
+[16-Jul-2022 17:27:14 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 52
+[16-Jul-2022 17:31:18 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 52
+[16-Jul-2022 17:31:19 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 52
+[16-Jul-2022 17:31:23 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 52
+[16-Jul-2022 17:40:38 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 52
+[16-Jul-2022 18:46:50 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/lcp7kk4alq05/public_html/aau_aduvall/wnm608_files/notes/reading_data.php on line 52

@@ -1,5 +1,3 @@
-
-
 const showResults = d => {
 	$(".productlist").html(
 		d.error?d.error:
@@ -27,8 +25,8 @@ $(()=>{
 
 	$(".js-sort").on("change",function(e){
 		(
-			this.value==1 ?query({type:'product_sort',column:'date_created',dir:'DESC'}):
-			this.value==2 ?query({type:'product_sort',column:'date_created',dir:'ASC'}):
+			this.value==1 ?query({type:'product_sort',column:'date',dir:'DESC'}):
+			this.value==2 ?query({type:'product_sort',column:'date',dir:'ASC'}):
 			this.value==3 ?query({type:'product_sort',column:'price',dir:'ASC'}):
 			this.value==4 ?query({type:'product_sort',column:'price',dir:'DESC'}):
 			query({type:'products_all'})

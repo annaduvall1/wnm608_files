@@ -19,7 +19,7 @@ include_once "lib/php/functions.php";
 				<ul class="container display-flex">
 					<li> <a href="index.php">Home</a> </li>
 					<li> <a href="about.php">About</a> </li>
-					<li> <a href="product_list.php">Store</a> </li>
+					<li> <a href="product_list_search.php">Store</a> </li>
 					<li> <a href="product_cart.php">
 					<span>Cart</span>
 					<span class="badge"><?= makeCartBadge(); ?></span>
