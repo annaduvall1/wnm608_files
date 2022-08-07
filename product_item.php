@@ -1,6 +1,9 @@
-<?php
+
+	
+	<?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
@@ -23,14 +26,20 @@ $image_elements = array_reduce($images,function($r,$o){
 	<script src="js/product_thumbs.js"></script>
 </head>
 <body>
+	
 	<?php include "parts/navbar.php"; ?>
+
+	
 		<div class="container">
 			<div class="grid gap">
 				<div class=".col-xs-12 col-md-7">
 					<div class="card soft">
+						<div class="card-section">
 						<div class="images-main">
+				
 						    <img src="img/<?= $product->thumbnail?>" alt="">
 					    </div>
+					</div>
 						<div class="images-thumbs">
 							<?= $image_elements ?>
 						</div>

@@ -31,7 +31,7 @@ $cart_items = getCartItems();
 		        </div>
             </div>
             <div class="col-xs-12 col-md-5">
-            	<div class="card soft flat">
+            	<div class="card soft">
 				<div class="flex-stretch"><strong>Sub Total</strong></div>
 				<div class="flex-none">&dollar;3.50</div>
             	<?= cartTotals() ?>

@@ -100,6 +100,15 @@ a:hover {
 	justify-content: center;
 }
 
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+	padding-top: 1em;
+}
+
 
 
 /* SMALL CLASSES */
@@ -113,7 +122,6 @@ a:hover {
 
 /* CHECKBOX */
 .hidden{display: none}
-
 
 
  /* COMPONENT CLASSES */
@@ -212,6 +220,7 @@ a:hover {
  	background-color:  var(--color-main-light);
  	color: var(--color-white);
  	line-height: var(--header-height);
+	margin-bottom: 1em;
  }
 
  .navbar h1 {
@@ -222,7 +231,12 @@ a:hover {
 
  .navbar a {
  	padding: 0 0.5em;
+	margin: 1em;
  }
+
+.flush>.navbar {
+	margin-bottom:0;
+}
 
 /* CARD */
 
@@ -255,8 +269,8 @@ a:hover {
 
  	.card.footer {
  		border-radius: 0.5em;
- 		margin-top: .5em;
- 		margin-bottom: .5em;
+ 		margin-top: .25em;
+ 		margin-bottom: .25em;
  		color: var(--color-neutral-blue);
  		text-align: center;
  	}
@@ -280,6 +294,19 @@ a:hover {
  	.card.flat {
  		padding: 0;
  	}
+
+	[class*='col-']>.card {
+	height: 100%;
+	margin: 0;
+}
+
+	.card-section~.card-section {
+		border-top: 1px solid var(--color-neutral-light);
+	}
+
+	.card-section {
+		padding :1em;
+	}
 
 
 
@@ -370,6 +397,7 @@ a:hover {
 
 .form-input: focus {
 	border-bottom-color: var(--color-main-light);
+	padding: 1em,
 }
 
 .form-label {
@@ -382,11 +410,11 @@ a:hover {
 
 
 .form-button {
-    background-color: var(--color-neutral-medium);
-    padding: 0.5em 1em;
-    border-radius: 0.2em;
-    cursor: pointer; 
-    text-align: center;
+    display: inline-block;
+	background-color: var(--color-neutral-light);
+	cursor: pointer;
+	text-align: center;
+	padding: 0.5em 0.1em;
 }
 
 .form-button.inline {
@@ -405,7 +433,7 @@ a:hover {
 .hotdog {
     background-color: var(--color-neutral-medium);
     border-radius: 2em;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 0.5em;
     display: flex;
 }
 
@@ -424,7 +452,6 @@ a:hover {
     padding: 0.5em 1.3em;
     background-color: var(--color-neutral-light);
     border-radius: 0.3em;
-    cursor: pointer;
 }
 
 .form-select {
@@ -434,7 +461,6 @@ a:hover {
 
 
 .form-select:after{
-	content: "▾";
 	font-family: arial，sans-serif;
 	font-size: 1.2em;
 	position: absolute;
@@ -461,7 +487,6 @@ a:hover {
 	background-color: #f0f0f0;
 	border-radius: 100px;
 	position: relative;
-	cursor: pointer;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	border: 2px solid #A1A1A1;
